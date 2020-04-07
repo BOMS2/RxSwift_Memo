@@ -12,10 +12,21 @@ import CoreData
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        //앱이 실행되면 여기서 Memory 저장소와 SceneCoordinator가 생성
+        //뷰모델은 두 인스턴스를 통해서 메모를 저장하고 화면을 처리한다.
+        let storage = MemoryStorage()
+        let coordinator = SceneCoordinator(window: window!)
+        let listViewModel = MemoListViewModel(title: "BOMS2 메모",
+                                              sceneCoordinator: coordinator, storage: storage)
+        let listScene = Scene.list(listViewModel)
+        
+        coordinator.transition(to: listScene, using: .root, animated: false)
+        
         return true
     }
 
