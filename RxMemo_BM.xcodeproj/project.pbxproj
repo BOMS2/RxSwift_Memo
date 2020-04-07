@@ -13,6 +13,7 @@
 		293B5DC0243C8EAA00A49275 /* RxMemo_BM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 293B5DBE243C8EAA00A49275 /* RxMemo_BM.xcdatamodeld */; };
 		293B5DC2243C8EAA00A49275 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 293B5DC1243C8EAA00A49275 /* Assets.xcassets */; };
 		293B5DC5243C8EAA00A49275 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293B5DC3243C8EAA00A49275 /* LaunchScreen.storyboard */; };
+		2945FB67243C94190092002A /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2945FB66243C94190092002A /* Memo.swift */; };
 		7F48D269870B0E7E554183AE /* Pods_RxMemo_BM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF4C2D59CEDC731C8E928E6 /* Pods_RxMemo_BM.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		293B5DC1243C8EAA00A49275 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		293B5DC4243C8EAA00A49275 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		293B5DC6243C8EAA00A49275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2945FB66243C94190092002A /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		595359004AF393D8C2862D20 /* Pods-RxMemo_BM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMemo_BM.release.xcconfig"; path = "Target Support Files/Pods-RxMemo_BM/Pods-RxMemo_BM.release.xcconfig"; sourceTree = "<group>"; };
 		ABF4C2D59CEDC731C8E928E6 /* Pods_RxMemo_BM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxMemo_BM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC31CFCF6F4F3EB54CF150D /* Pods-RxMemo_BM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMemo_BM.debug.xcconfig"; path = "Target Support Files/Pods-RxMemo_BM/Pods-RxMemo_BM.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		2945FB61243C93120092002A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2945FB66243C94190092002A /* Memo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				293B5DC0243C8EAA00A49275 /* RxMemo_BM.xcdatamodeld in Sources */,
 				293B5DB6243C8EAA00A49275 /* AppDelegate.swift in Sources */,
 				293B5DB8243C8EAA00A49275 /* SceneDelegate.swift in Sources */,
+				2945FB67243C94190092002A /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
