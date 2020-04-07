@@ -7,7 +7,12 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
-class MemoListViewModel {
-    
+//commonviewmodel 상속
+class MemoListViewModel: CommonViewModel {
+    var memoList: Observable<[Memo]> {
+        return storage.memoList()
+    }
 }

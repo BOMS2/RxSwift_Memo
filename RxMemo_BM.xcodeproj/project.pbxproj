@@ -27,6 +27,7 @@
 		2945FB7F243CA1C60092002A /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2945FB7E243CA1C60092002A /* Scene.swift */; };
 		2945FB81243CA5410092002A /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2945FB80243CA5410092002A /* SceneCoordinatorType.swift */; };
 		2945FB83243CA6110092002A /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2945FB82243CA6110092002A /* SceneCoordinator.swift */; };
+		2945FB85243CE24D0092002A /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2945FB84243CE24D0092002A /* CommonViewModel.swift */; };
 		7F48D269870B0E7E554183AE /* Pods_RxMemo_BM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF4C2D59CEDC731C8E928E6 /* Pods_RxMemo_BM.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		2945FB7E243CA1C60092002A /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		2945FB80243CA5410092002A /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
 		2945FB82243CA6110092002A /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
+		2945FB84243CE24D0092002A /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
 		595359004AF393D8C2862D20 /* Pods-RxMemo_BM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMemo_BM.release.xcconfig"; path = "Target Support Files/Pods-RxMemo_BM/Pods-RxMemo_BM.release.xcconfig"; sourceTree = "<group>"; };
 		ABF4C2D59CEDC731C8E928E6 /* Pods_RxMemo_BM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxMemo_BM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC31CFCF6F4F3EB54CF150D /* Pods-RxMemo_BM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMemo_BM.debug.xcconfig"; path = "Target Support Files/Pods-RxMemo_BM/Pods-RxMemo_BM.debug.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				2945FB74243C9E020092002A /* MemoListViewModel.swift */,
 				2945FB76243C9E2E0092002A /* MemoDetailViewModel.swift */,
 				2945FB78243C9E540092002A /* MemoComposeViewModel.swift */,
+				2945FB84243CE24D0092002A /* CommonViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				2945FB81243CA5410092002A /* SceneCoordinatorType.swift in Sources */,
 				2945FB75243C9E020092002A /* MemoListViewModel.swift in Sources */,
 				2945FB77243C9E2E0092002A /* MemoDetailViewModel.swift in Sources */,
+				2945FB85243CE24D0092002A /* CommonViewModel.swift in Sources */,
 				2945FB7D243CA13C0092002A /* TransitionModel.swift in Sources */,
 				2945FB6F243C9D590092002A /* MemoListViewController.swift in Sources */,
 				2945FB73243C9DAB0092002A /* MemoComposeViewController.swift in Sources */,
