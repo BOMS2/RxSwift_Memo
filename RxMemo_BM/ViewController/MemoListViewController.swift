@@ -29,6 +29,7 @@ class MemoListViewController: UIViewController , ViewModelBindableType {
     }
     
     //뷰모델과 뷰를 바인딩
+    //선택한 메모가 액션으로 전달되고 액션에 구현되어있는 코드가 실행
     func bindViewModel() {
         viewModel.title
             .drive(navigationItem.rx.title)
@@ -41,6 +42,15 @@ class MemoListViewController: UIViewController , ViewModelBindableType {
         .disposed(by: rx.disposeBag)
         
         addButton.rx.action = viewModel.makeCreateAction()
+        
+        Observable.zip(listTableView.rx.modelSelected(Memo.self),
+                       listTableView.rx.itemSelected)
+            .do(onNext: { [unowned self] (_, indexPath) in
+                self.listTableView.deselectRow(at: indexPath, animated: true)
+                })
+            .map { $0.0 }
+            .bind(to: viewModel.detailAction.inputs)
+            .disposed(by: rx.disposeBag)
     }
 
 
