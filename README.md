@@ -1,2 +1,2 @@
-# RxSwift_example :pencil2:
+# RxSwift_example 📝
 
