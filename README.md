@@ -1,2 +1,2 @@
-# RxSwift_example 📝
+# RxSwift_memo 📝
 
