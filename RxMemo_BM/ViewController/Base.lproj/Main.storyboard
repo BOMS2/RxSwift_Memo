@@ -107,7 +107,7 @@
                                 <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <items>
                                     <barButtonItem systemItem="trash" id="A8i-aD-Pjf">
-                                        <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="8ak-oC-Ep5"/>
                                     <barButtonItem systemItem="compose" id="buS-mm-7ch"/>
@@ -172,10 +172,10 @@
                     <navigationItem key="navigationItem" title="메모 보기" id="eiA-03-yHr"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="deleteButton" destination="TZd-V1-5pA" id="FEk-s0-SuA"/>
-                        <outlet property="editButton" destination="TZd-V1-5pA" id="J5U-WP-Lez"/>
+                        <outlet property="deleteButton" destination="A8i-aD-Pjf" id="9Y8-Hb-AwY"/>
+                        <outlet property="editButton" destination="buS-mm-7ch" id="TvT-mL-Yh2"/>
                         <outlet property="listTableView" destination="Xrc-1N-FxS" id="y11-Dl-1j1"/>
-                        <outlet property="shareButton" destination="TZd-V1-5pA" id="Uix-rA-KfM"/>
+                        <outlet property="shareButton" destination="O4B-kb-YyB" id="5Rv-qz-Uwd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0nz-Qx-7o4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -229,7 +229,7 @@
                 <navigationController storyboardIdentifier="ComposeNav" automaticallyAdjustsScrollViewInsets="NO" id="fYK-fa-if0" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="s2r-iK-hNb">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="103.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -8,6 +8,7 @@
 
 import Foundation
 import RxSwift
+import CoreData
 
 //메모리에 메모 저장
 class MemoryStorage: MemoStorageType{
@@ -61,5 +62,6 @@ class MemoryStorage: MemoStorageType{
         return Observable.just(memo)
     }
     
-    
 }
+
+

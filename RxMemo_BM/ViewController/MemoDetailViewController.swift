@@ -18,10 +18,15 @@ class MemoDetailViewController: UIViewController, ViewModelBindableType {
     
     @IBOutlet weak var listTableView: UITableView!
     
-    @IBOutlet weak var deleteButton: UIToolbar!
-    @IBOutlet weak var editButton: UIToolbar!
+
+    @IBOutlet weak var deleteButton: UIBarButtonItem!
     
-    @IBOutlet weak var shareButton: UIToolbar!
+    
+    @IBOutlet weak var editButton: UIBarButtonItem!
+    
+    @IBOutlet weak var shareButton: UIBarButtonItem!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,8 +55,8 @@ class MemoDetailViewController: UIViewController, ViewModelBindableType {
         
         .disposed(by: rx.disposeBag)
         
-        //이 문장에서 계속 에러남....
-        //editButton.rx.action = viewModel.makeEditAction()
+        
+        editButton.rx.action = viewModel.makeEditAction()
         
         
         //뒤로가기 버튼을 교체하는 코드
