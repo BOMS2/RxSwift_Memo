@@ -73,6 +73,9 @@ class MemoDetailViewController: UIViewController, ViewModelBindableType {
         //                navigationItem.leftBarButtonItem = backButton
                 
                 
+        //삭제 버튼과 뷰모델에 있는 구현한 액션을 바인딩
+        //액션 활용
+        deleteButton.rx.action = viewModel.makeDeleteAction()
         
         
         //sharebutton 구현, 탭속성 활용
