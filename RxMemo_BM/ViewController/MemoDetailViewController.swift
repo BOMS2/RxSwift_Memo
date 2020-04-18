@@ -56,6 +56,7 @@ class MemoDetailViewController: UIViewController, ViewModelBindableType {
         .disposed(by: rx.disposeBag)
         
         
+        //편집버튼은 액션 활용
         editButton.rx.action = viewModel.makeEditAction()
         
         
@@ -73,6 +74,18 @@ class MemoDetailViewController: UIViewController, ViewModelBindableType {
                 
                 
         
+        
+        //sharebutton 구현, 탭속성 활용
+        shareButton.rx.tap
+            .throttle(.microseconds(500), scheduler: MainScheduler.instance)
+            .subscribe(onNext: { [ weak self] _ in
+                guard let memo = self?.viewModel.memo.content else { return }
+                
+                let vc = UIActivityViewController(activityItems: [memo], applicationActivities: nil)
+                self?.present(vc, animated: true, completion: nil)
+                
+            })
+            .disposed(by: rx.disposeBag)
     }
 
 }
