@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import RxDataSources
 
-struct Memo: Equatable {
+struct Memo: Equatable, IdentifiableType {
     //메모 저장
     var content: String
     //생성 날짜 저장
